@@ -1,16 +1,24 @@
 # OTRVv3 Sequence Diagrams
 
-This repository intends to be the place to share the OTRv3[\[1\]](#references) diagrams in order to
-fully understand the protocol.
+This repository intends to be the place to share the OTRv3[\[1\]](#references)
+diagrams in order to fully understand the protocol.
 
-## AKE[\[2\]](#references)
+## Authenticated Key Exchange (AKE) Diagram[\[2\]](#references)
 
-![Authenticated Key exchange](./img/otrv3-authenticated-key-exchange.svg)
+![Authenticated Key exchange diagrama](./img/otrv3-authenticated-key-exchange.svg)
+
+## Data Exchange Diagram
+
+![otrv3 data exchange diagram]()
+
+## Socialist Millionaires' Protocol (SMP) Diagram
+
+![socialist millionaires protocol diagram]()
 
 ## Generating the diagrams
 
 To generate the diagrams I have used
-[js-sequnce-diagrams](https://bramp.github.io/js-sequence-diagrams/) tool. The
+[js-sequence-diagrams](https://bramp.github.io/js-sequence-diagrams/) tool. The
 source code to regenerate the diagrams is store at `jssd` folder, and the
 compiled SVGs are kept on `img` folder.
 
