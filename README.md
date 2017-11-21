@@ -3,7 +3,7 @@
 This repository intends to be the place to share the OTRv3[\[1\]](#references) diagrams in order to
 fully understand the protocol.
 
-![Authenticated Key exchange](./imgs/otrv3-authenticated-key-exchange.svg)
+![Authenticated Key exchange](./img/otrv3-authenticated-key-exchange.svg)
 
 ## References
 
