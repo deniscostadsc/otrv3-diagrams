@@ -1,0 +1,9 @@
+title: OTRv3 - Data exchange
+
+Note right of Alice: Picks the most recent of her own D-H encryption\nkeys that Bob has acknowledged receiving (by\nusing it in a Data Message, or failing that, in \n the AKE). Let keyA be that key, and let keyidA\nbe its serial number.
+Note right of Alice: If the above key is Alice's most recent key,\nshe generates a new D-H key (next_dh), to get\nthe serial number keyidA+1.
+Note right of Alice: Picks the most recent of Bob's D-H encryption \n keys that she has received from him (either in a \n Data Message or in the AKE). Let keyB by that \n key, and let keyidB be its serial number.
+Note right of Alice: Uses Diffie-Hellman to compute a shared secret \n from the two keys keyA and keyB, and generates \n the sending AES key, ek, and the sending MAC key, \n mk, as detailed below.
+Note right of Alice: Collects any old MAC keys that were used in \n previous messages, but will never again be used \n (because their associated D-H keys are no longer \n the most recent ones) into a list, oldmackeys.
+
+
