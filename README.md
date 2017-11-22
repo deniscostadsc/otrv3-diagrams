@@ -9,7 +9,7 @@ diagrams in order to fully understand the protocol.
 
 ## Data Exchange Diagram
 
-![otrv3 data exchange diagram](data-exchange)
+![otrv3 data exchange diagram][data-exchange]
 
 ## Socialist Millionaires' Protocol (SMP)[\[3\]](#references) Diagram
 
@@ -30,7 +30,7 @@ compiled SVGs are kept on `img` folder.
 [3] - https://en.wikipedia.org/wiki/Socialist_millionaires
 
 
-[ake]: ./img/otrv3-authenticated-key-exchange.svg:
+[ake]: ./img/otrv3-authenticated-key-exchange.svg
 [data-exchange]: ./img/otrv3-data-exchange.svg
 
 [jsdd]: https://bramp.github.io/js-sequence-diagrams/
