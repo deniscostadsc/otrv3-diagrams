@@ -9,7 +9,7 @@ Alice->Bob: Sends Bob g^y
 
 Note right of Bob: Verifies that Alice's g^y is a legal value (2 <= g^y <= modulus-2)
 Note right of Bob: Computes s = (g^y)^x
-Note right of Bob: Computes two AES keys c, c' and four MAC keys m1, m1', m2, m2' by hashing s in various ways
+Note right of Bob: Computes two AES keys c, c' and four MAC keys m1, m1', m2, m2' by \n hashing s in various ways
 Note right of Bob: Picks keyid B, a serial number for his D-H key g^x
 Note right of Bob: Computes M B = MACm1(g^x, g^y, pubB, keyidB)
 Note right of Bob: Computes XB = pubB, keyidB, sigB(MB)
@@ -18,8 +18,8 @@ Bob->Alice: Sends Alice r, AESc(XB), MACm2(AESc(XB))
 Note right of Alice: Uses r to decrypt the value of g^x sent earlier
 Note right of Alice: Verifies that HASH(g^x) matches the value sent earlier
 Note right of Alice: Verifies that Bob's g^x is a legal value (2 <= g^x <= modulus-2)
-Note right of Alice: Computes s = (g^x)^y (note that this will be the same as the value of s Bob calculated)
-Note right of Alice: Computes two AES keys c, c' and four MAC keys m1, m1', m2, m2' by hashing s in various ways (the same as Bob)
+Note right of Alice: Computes s = (g^x)^y (note that this will be the same as the value \n of s Bob calculated)
+Note right of Alice: Computes two AES keys c, c' and four MAC keys m1, m1', m2, m2' by \n hashing s in various ways (the same as Bob)
 Note right of Alice: Uses m2 to verify MACm2(AESc(XB))
 Note right of Alice: Uses c to decrypt AESc(XB) to obtain XB = pubB, keyidB, sigB(MB)
 Note right of Alice: Computes MB = MACm1(g^x, g^y, pubB, keyidB)
@@ -33,3 +33,5 @@ Note right of Bob: Uses m2' to verify MACm2'(AESc'(XA))
 Note right of Bob: Uses c' to decrypt AESc'(XA) to obtain XA = pubA, keyidA, sigA(MA)
 Note right of Bob: Computes MA = MACm1'(g^y, g^x, pubA, keyidA)
 Note right of Bob: Uses pubA to verify sigA(MA)
+
+Note over Alice, Bob: If all of the verifications succeeded, Alice and Bob now know \n each other's Diffie-Hellman public keys, and share the value s. \n Alice is assured that s is known by someone with access to the \n private key corresponding to pubB, and similarly for Bob.
