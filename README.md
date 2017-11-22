@@ -66,7 +66,7 @@ begin with.
 
 Assuming that Alice begins the exchange:
 
-![socialist millionaires protocol diagram][solialist-millionaires-protocol]
+![socialist millionaires protocol diagram][socialist-millionaires-protocol]
 
 ## Generating the diagrams
 
@@ -85,6 +85,6 @@ compiled SVGs are kept on `img` folder.
 
 [ake]: ./img/otrv3-authenticated-key-exchange.svg
 [data-exchange]: ./img/otrv3-data-exchange.svg
-[solialist-millionaires-protocol]: ./img/otrv3-solialist-millionaires-protocol.svg
+[socialist-millionaires-protocol]: ./img/otrv3-socialist-millionaires-protocol.svg
 
 [jsdd]: https://bramp.github.io/js-sequence-diagrams/
