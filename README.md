@@ -11,7 +11,7 @@ diagrams in order to fully understand the protocol.
 
 ![otrv3 data exchange diagram](data-exchange)
 
-## Socialist Millionaires' Protocol (SMP) Diagram
+## Socialist Millionaires' Protocol (SMP)[\[3\]](#references) Diagram
 
 ![socialist millionaires protocol diagram]()
 
@@ -24,7 +24,10 @@ compiled SVGs are kept on `img` folder.
 ## References
 
 [1] - https://otr.cypherpunks.ca/Protocol-v3-4.1.1.html
+
 [2] - https://en.wikipedia.org/wiki/Key_exchange
+
+[3] - https://en.wikipedia.org/wiki/Socialist_millionaires
 
 [data-exchange]: ./img/otrv3-data-exchange.svg
 [ake]: ./img/otrv3-authenticated-key-exchange.svg:
