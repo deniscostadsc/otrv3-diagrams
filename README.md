@@ -5,7 +5,7 @@ diagrams in order to fully understand the protocol.
 
 ## Authenticated Key Exchange (AKE)[\[2\]](#references) Diagram
 
-![Authenticated Key exchange diagrama](ake)
+![Authenticated Key exchange diagrama][ake]
 
 ## Data Exchange Diagram
 
@@ -13,11 +13,11 @@ diagrams in order to fully understand the protocol.
 
 ## Socialist Millionaires' Protocol (SMP)[\[3\]](#references) Diagram
 
-![socialist millionaires protocol diagram]()
+![socialist millionaires protocol diagram][]
 
 ## Generating the diagrams
 
-To generate the diagrams I have used [js-sequence-diagrams](jsdd) tool. The
+To generate the diagrams I have used [js-sequence-diagrams][jsdd] tool. The
 source code to regenerate the diagrams is store at `jssd` folder, and the
 compiled SVGs are kept on `img` folder.
 
