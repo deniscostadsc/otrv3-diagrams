@@ -5,5 +5,10 @@ Note right of Alice: If the above key is Alice's most recent key,\nshe generates
 Note right of Alice: Picks the most recent of Bob's D-H encryption \n keys that she has received from him (either in a \n Data Message or in the AKE). Let keyB by that \n key, and let keyidB be its serial number.
 Note right of Alice: Uses Diffie-Hellman to compute a shared secret \n from the two keys keyA and keyB, and generates \n the sending AES key, ek, and the sending MAC key, \n mk, as detailed below.
 Note right of Alice: Collects any old MAC keys that were used in \n previous messages, but will never again be used \n (because their associated D-H keys are no longer \n the most recent ones) into a list, oldmackeys.
+Note right of Alice: Picks a value of the counter, ctr, so that the \n triple (keyA, keyB, ctr) is never the same for \n more than one Data Message Alice sends to Bob.
+Note right of Alice: Computes TA = (keyidA, keyidB, next_dh, ctr, AES-CTRek,ctr(msg))
+Alice->Bob: Sends Bob TA, MACmk(TA), oldmackeys
 
-
+Note right of Bob: Uses Diffie-Hellman to compute a shared secret \n from the two keys labelled by keyidA and keyidB, \n and generates the receiving AES key, ek, and the \n receiving MAC key, mk, as detailed below. (These \n will be the same as the keys Alice generated, above.)
+Note right of Bob: Uses mk to verify MACmk(TA).
+Note right of Bob: Uses ek and ctr to decrypt AES-CTRek,ctr(msg).

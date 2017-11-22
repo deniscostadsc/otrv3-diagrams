@@ -9,7 +9,7 @@ diagrams in order to fully understand the protocol.
 
 ## Data Exchange Diagram
 
-![otrv3 data exchange diagram]()
+![otrv3 data exchange diagram](./img/otrv3-data-exchange.svg)
 
 ## Socialist Millionaires' Protocol (SMP) Diagram
 
