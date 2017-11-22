@@ -1,4 +1,4 @@
-# OTRVv3 Sequence Diagrams
+# OTRv3 Sequence Diagrams
 
 This repository intends to be the place to share the OTRv3[\[1\]](#references)
 diagrams in order to fully understand the protocol.
