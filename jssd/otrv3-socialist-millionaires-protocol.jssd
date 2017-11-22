@@ -1,0 +1,28 @@
+title: OTRv3 - Socialist Millionaires' Protocol (SMP)
+
+Note right of Alice: Picks random exponents a2 and a3
+Alice->Bob: Sends Bob g2a = g1^a2 and g3a = g1^a3
+
+Note right of Bob: Picks random exponents b2 and b3
+Note right of Bob: Computes g2b = g1^b2 and g3b = g1^b3
+Note right of Bob: Computes g2 = g2a^b2 and g3 = g3a^b3
+Note right of Bob: Picks random exponent r
+Note right of Bob: Computes Pb = g3^r and Qb = g1^r g2^y
+Bob->Alice: Sends Alice g2b, g3b, Pb and Qb
+
+Note right of Alice: Computes g2 = g2b^a2 and g3 = g3b^a3
+Note right of Alice: Picks random exponent s
+Note right of Alice: Computes Pa = g3^s and Qa = g1^s g2^x
+Note right of Alice: Computes Ra = (Qa / Qb) a3
+Alice->Bob: Sends Bob Pa, Qa and Ra
+
+Note right of Bob: Computes Rb = (Qa / Qb)^b3
+Note right of Bob: Computes Rab = Ra^b3
+Note right of Bob: Checks whether Rab == (Pa / Pb)
+Bob->Alice: Sends Alice Rb
+
+Note right of Alice: Computes Rab = Rb^a3
+Note right of Alice: Checks whether Rab == (Pa / Pb)
+
+Note over Alice, Bob: If everything is done correctly, then Rab should hold the value of (Pa / Pb) times \n (g2^a3b3)^(x - y), which means that the test at the end of the protocol will only \n succeed if x == y. Further, since g2^a3b3 is a random number not known to any party, \n if x is not equal to y, no other information is revealed.
+
