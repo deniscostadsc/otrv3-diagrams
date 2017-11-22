@@ -29,7 +29,8 @@ compiled SVGs are kept on `img` folder.
 
 [3] - https://en.wikipedia.org/wiki/Socialist_millionaires
 
-[data-exchange]: ./img/otrv3-data-exchange.svg
+
 [ake]: ./img/otrv3-authenticated-key-exchange.svg:
+[data-exchange]: ./img/otrv3-data-exchange.svg
 
 [jsdd]: https://bramp.github.io/js-sequence-diagrams/
