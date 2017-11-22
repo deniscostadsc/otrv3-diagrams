@@ -5,11 +5,11 @@ diagrams in order to fully understand the protocol.
 
 ## Authenticated Key Exchange (AKE)[\[2\]](#references) Diagram
 
-![Authenticated Key exchange diagrama](./img/otrv3-authenticated-key-exchange.svg)
+![Authenticated Key exchange diagrama](ake)
 
 ## Data Exchange Diagram
 
-![otrv3 data exchange diagram](./img/otrv3-data-exchange.svg)
+![otrv3 data exchange diagram](data-exchange)
 
 ## Socialist Millionaires' Protocol (SMP) Diagram
 
@@ -17,8 +17,7 @@ diagrams in order to fully understand the protocol.
 
 ## Generating the diagrams
 
-To generate the diagrams I have used
-[js-sequence-diagrams](https://bramp.github.io/js-sequence-diagrams/) tool. The
+To generate the diagrams I have used [js-sequence-diagrams](jsdd) tool. The
 source code to regenerate the diagrams is store at `jssd` folder, and the
 compiled SVGs are kept on `img` folder.
 
@@ -26,3 +25,8 @@ compiled SVGs are kept on `img` folder.
 
 [1] - https://otr.cypherpunks.ca/Protocol-v3-4.1.1.html
 [2] - https://en.wikipedia.org/wiki/Key_exchange
+
+[data-exchange]: ./img/otrv3-data-exchange.svg
+[ake]: ./img/otrv3-authenticated-key-exchange.svg:
+
+[jsdd]: https://bramp.github.io/js-sequence-diagrams/
