@@ -25,8 +25,8 @@ whitespace tag.
 
 ## Authenticated Key Exchange (AKE)[\[2\]](#references) Diagram
 
-This section outlines the version of the SIGMA protocol used as the AKE. All
-exponentiations are done modulo a particular 1536-bit prime, and g is a
+This section outlines the version of the SIGMA protocol[\[3\]] used as the AKE.
+All exponentiations are done modulo a particular 1536-bit prime, and g is a
 generator of that group, as indicated in the detailed description below. Alice
 and Bob's long-term authentication public keys are pubA and pubB, respectively.
 
@@ -49,7 +49,7 @@ Suppose Alice has a message (msg) to send to Bob.
 
 ![otrv3 data exchange diagram][data-exchange]
 
-## Socialist Millionaires' Protocol (SMP)[\[3\]](#references) Diagram
+## Socialist Millionaires' Protocol (SMP)[\[4\]](#references) Diagram
 
 While data messages are being exchanged, either Alice or Bob may run SMP to
 detect impersonation or man-in-the-middle attacks. As above, all
@@ -83,7 +83,9 @@ compiled SVGs are kept on `img` folder.
 
 [2] - https://en.wikipedia.org/wiki/Key_exchange
 
-[3] - https://en.wikipedia.org/wiki/Socialist_millionaires
+[3] - https://eprint.iacr.org/2010/454.pdf
+
+[4] - https://en.wikipedia.org/wiki/Socialist_millionaires
 
 
 [ake]: ./img/otrv3-authenticated-key-exchange.svg
