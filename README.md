@@ -3,6 +3,9 @@
 This repository intends to be the place to share the OTRv3[\[1\]](#references)
 diagrams in order to fully understand the protocol.
 
+This work can be improved adding notes, better explanations and some simplistic
+implementation. This will be done slowly. Feel free to help me.
+
 ## Requesting an OTR conversation
 
 There are two ways Alice can inform Bob that she is willing to use the OTR
