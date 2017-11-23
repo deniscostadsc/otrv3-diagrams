@@ -25,10 +25,11 @@ whitespace tag.
 
 ## Authenticated Key Exchange (AKE)[\[2\]](#references) Diagram
 
-This section outlines the version of the SIGMA protocol[\[3\]] used as the AKE.
-All exponentiations are done modulo a particular 1536-bit prime, and g is a
-generator of that group, as indicated in the detailed description below. Alice
-and Bob's long-term authentication public keys are pubA and pubB, respectively.
+This section outlines the version of the SIGMA protocol[\[3\]](#references)
+used as the AKE.  All exponentiations are done modulo a particular 1536-bit
+prime, and g is a generator of that group, as indicated in the detailed
+description below. Alice and Bob's long-term authentication public keys are
+pubA and pubB, respectively.
 
 The general idea is that Alice and Bob do an unauthenticated Diffie-Hellman
 (D-H) key exchange to set up an encrypted channel, and then do mutual
