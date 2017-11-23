@@ -11,7 +11,7 @@ Note right of Bob: 1. Verifies that Alice's g^y is a legal value (2 <= g^y <= mo
 Note right of Bob: 2. Computes s = (g^y)^x
 Note right of Bob: 3. Computes two AES keys c, c' and four MAC keys m1, m1', m2, m2' by \n hashing s in various ways
 Note right of Bob: 4. Picks keyid B, a serial number for his D-H key g^x
-Note right of Bob: 5. Computes M B = MACm1(g^x, g^y, pubB, keyidB)
+Note right of Bob: 5. Computes MB = MACm1(g^x, g^y, pubB, keyidB)
 Note right of Bob: 6. Computes XB = pubB, keyidB, sigB(MB)
 Bob->Alice: 7. Sends Alice r, AESc(XB), MACm2(AESc(XB))
 
