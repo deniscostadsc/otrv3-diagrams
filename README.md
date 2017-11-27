@@ -27,7 +27,7 @@ whitespace tag.
 
 This section outlines the version of the SIGMA protocol[\[4\]](#references)
 used as the AKE.  All exponentiations are done modulo a particular 1536-bit
-prime, and g is a generator of that group, as indicated in the detailed
+prime, and g is a generator of that group[\[5\]], as indicated in the detailed
 description below. Alice and Bob's long-term authentication public keys are
 pubA and pubB, respectively.
 
@@ -50,7 +50,7 @@ Suppose Alice has a message (msg) to send to Bob.
 
 ![otrv3 data exchange diagram][data-exchange]
 
-## Socialist Millionaires' Protocol (SMP)[\[5\]](#references) Diagram
+## Socialist Millionaires' Protocol (SMP)[\[6\]](#references) Diagram
 
 While data messages are being exchanged, either Alice or Bob may run SMP to
 detect impersonation or man-in-the-middle attacks. As above, all
@@ -88,8 +88,9 @@ compiled SVGs are kept on `img` folder.
 
 [4] - https://eprint.iacr.org/2010/454.pdf
 
-[5] - https://en.wikipedia.org/wiki/Socialist_millionaires
+[5] - https://www.ietf.org/rfc/rfc3526.txt
 
+[6] - https://en.wikipedia.org/wiki/Socialist_millionaires
 
 [ake]: ./img/otrv3-authenticated-key-exchange.svg
 [data-exchange]: ./img/otrv3-data-exchange.svg
