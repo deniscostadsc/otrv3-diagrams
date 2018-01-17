@@ -27,7 +27,7 @@ whitespace tag.
 
 This section outlines the version of the SIGMA protocol[\[4\]](#references)
 used as the AKE.  All exponentiations are done modulo a particular 1536-bit
-prime, and g is a generator of that group[\[5\]], as indicated in the detailed
+prime, and g is a generator of that group[\[5\]](#references), as indicated in the detailed
 description below. Alice and Bob's long-term authentication public keys are
 pubA and pubB, respectively.
 
